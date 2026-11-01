@@ -1,0 +1,23 @@
+@model StudentProfile
+@{
+    ViewData["Title"] = "Мен туралы";
+}
+<div class="page-heading" data-reveal>
+    <p class="eyebrow">Шағын таныстыру</p>
+    <h1>Мен туралы</h1>
+</div>
+<div class="about-grid">
+    <section class="paper-panel" data-reveal aria-labelledby="bio-heading">
+        <span class="panel-symbol" aria-hidden="true">✳</span>
+        <h2 id="bio-heading">Қысқаша өзім туралы</h2>
+        <p>@Model.Biography</p>
+    </section>
+    <section class="education" data-reveal aria-labelledby="education-heading">
+        <p class="eyebrow">Білімім</p>
+        <h2 id="education-heading">@Model.University</h2>
+        <dl>
+            <div><dt>Мамандығым</dt><dd>@Model.Specialty</dd></div>
+            <div><dt>Тобым</dt><dd>@Model.Group</dd></div>
+        </dl>
+    </section>
+</div>

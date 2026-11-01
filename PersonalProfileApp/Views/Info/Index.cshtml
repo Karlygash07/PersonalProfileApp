@@ -1,0 +1,22 @@
+@model StudentProfile
+@{
+    ViewData["Title"] = "Басты бет";
+}
+<section class="welcome">
+    <div class="welcome-copy" data-reveal>
+        <p class="eyebrow"><span class="tiny-flower" aria-hidden="true">✳</span> Танысқаныма қуаныштымын</p>
+        <h1>Сәлем!<br />Мен — @Model.FullName.</h1>
+        <p class="lead">@Model.ShortBio</p>
+        <div class="actions">
+            <a class="button" asp-controller="Info" asp-action="About">Менімен танысу <span aria-hidden="true">↗</span></a>
+            <a class="plain-link" asp-controller="Info" asp-action="Portfolio">Оқу жобам →</a>
+        </div>
+    </div>
+    <div class="calling-card" data-reveal>
+        <div class="card-heading"><span>Жеке визитка</span><span aria-hidden="true">✳</span></div>
+        <div class="letter-seal" aria-hidden="true">@Model.Initials</div>
+        <p class="card-name">@Model.FullName</p>
+        <p class="card-university">@Model.University</p>
+        <div class="card-bottom"><span>@Model.Specialty</span><span>@Model.Group</span></div>
+    </div>
+</section>

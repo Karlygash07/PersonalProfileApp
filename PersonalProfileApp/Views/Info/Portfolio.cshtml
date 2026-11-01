@@ -1,0 +1,29 @@
+@model StudentProfile
+@{
+    ViewData["Title"] = "Оқу жобам";
+}
+<div class="page-heading" data-reveal>
+    <p class="eyebrow">Практикадағы алғашқы қадам</p>
+    <h1>Оқу жобам</h1>
+</div>
+@foreach (var project in Model.Projects)
+{
+    <article class="project" data-reveal>
+        <div class="project-cover" aria-hidden="true"><span>&lt; / &gt;</span><span class="project-cover-label">Жеке парақша</span></div>
+        <div class="project-copy">
+            <p class="eyebrow">ASP.NET Core MVC</p>
+            <h2>@project.Title</h2>
+            <p>@project.Description</p>
+            <ul class="project-tags">
+                @foreach (var technology in project.Technologies)
+                {
+                    <li>@technology</li>
+                }
+            </ul>
+            @if (!string.IsNullOrWhiteSpace(project.RepositoryUrl))
+            {
+                <a class="plain-link" href="@project.RepositoryUrl" target="_blank" rel="noopener noreferrer">Кодты көру ↗<span class="sr-only"> (жаңа бетте ашылады)</span></a>
+            }
+        </div>
+    </article>
+}

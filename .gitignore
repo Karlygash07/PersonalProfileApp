@@ -1,0 +1,32 @@
+# .NET build results
+**/bin/
+**/obj/
+artifacts/
+TestResults/
+*.trx
+*.binlog
+
+# Visual Studio / Rider / local editor state
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local publish output and private settings
+**/publish/
+**/Properties/PublishProfiles/*.pubxml.user
+**/appsettings.Local.json
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
