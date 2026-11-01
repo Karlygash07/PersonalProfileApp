@@ -7,7 +7,7 @@
 - Email: karlygash_abdiyeva@mail.ru.
 - GitHub профилі: [Karlygash07](https://github.com/Karlygash07).
 
-Жас, туған жер, жұмыс тәжірибесі және жетістіктер қосылмаған. Дағдылар оқу барысында үйреніп жүрген технологиялар ретінде көрсетілген. Портфолиода осы визитка жобасы ғана бар; репозиторий сілтемесі берілмегендіктен бос қалдырылған.
+Жас, туған жер, жұмыс тәжірибесі және жетістіктер қосылмаған. Дағдылар оқу барысында үйреніп жүрген технологиялар ретінде көрсетілген. Портфолиода осы визитка жобасы ғана бар; репозиторий сілтемесі толтырылған.
 
 ## Іске қосу
 
@@ -50,8 +50,18 @@ dotnet run --project PersonalProfileApp --launch-profile http
 
 ## GitHub және Classroom
 
-Бұл — жергілікті Қарлығаш нұсқасы. Karlygash07 аккаунтына жүктелген жоқ. Бұл бөлек жобаға бұрынғы портфолионың Git тарихы кірмейді.
+Репозиторий: [Karlygash07/PersonalProfileApp](https://github.com/Karlygash07/PersonalProfileApp).
 
-Қарлығаштың бөлек репозиторийін жасап, соған жүктегеннен кейін Classroom-ға **сол репозиторийдің негізгі URL-ын** тапсыру керек. Профиль немесе localhost URL-ын тапсырмаңыз. `.gitignore` build нәтижелерін, IDE баптауларын және жеке файлдарды елемейді.
+Осы сілтемені Google Classroom тапсырмасына тіркеуге болады. Classroom-ға автоматты жіберу орындалмайды.
+
+Жобаны басқа компьютерге алу:
+
+```powershell
+git clone https://github.com/Karlygash07/PersonalProfileApp.git
+cd PersonalProfileApp
+dotnet run --project PersonalProfileApp --launch-profile http
+```
+
+Қарлығаштың жеке Git репозиторийі бұрынғы портфолионың commit тарихын қамтымайды. Жергілікті бөлек көшірме `artifacts/KarlygashProfileApp` бумасында дайындалған. `.gitignore` build нәтижелері мен IDE баптауларын елемейді.
 
 Тексеру нәтижелері: [docs/VERIFICATION.md](docs/VERIFICATION.md).

@@ -28,7 +28,7 @@ public static class StudentProfileData
                     Title = "Жеке визитка",
                     Description = "Өзім туралы қысқаша мәлімет пен байланыс ақпараты берілген үш беттік оқу сайты.",
                     Technologies = new List<string> { "C#", ".NET 8", "Razor", "CSS" },
-                    RepositoryUrl = ""
+                    RepositoryUrl = "https://github.com/Karlygash07/PersonalProfileApp"
                 }
             }
         };
